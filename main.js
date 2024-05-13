@@ -44,7 +44,7 @@ let data_base =
   }}];
   console.log(data);
   
-  var layout = {  margin: { t: 25, r: 25, l: 25, b: 25 }, };
+  var layout = {  margin: { t: 50, r: 35, l: 30, b: 10 }, padding: 10};
   Plotly.newPlot('ntc1', data, layout);
   let data2 = [{...data_base,title:{
     text: "NTC2"
@@ -87,6 +87,16 @@ let data_base =
   }}];
   Plotly.newPlot('ntc11', data11, layout);
 
+
+  let datatpp = [{...data_base,title:{
+    text: "Pannello Pilota"
+  }}];
+  Plotly.newPlot("tpp",datatpp,layout);
+
+  let datatamb = [{...data_base,title:{
+    text: "Temperatura Ambiente"
+  }}];
+  Plotly.newPlot("tamb",datatamb,layout);
 
 
   var interval = setInterval(function() {

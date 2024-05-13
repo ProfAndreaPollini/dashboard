@@ -1,5 +1,5 @@
 
-#app {
+.temperature_wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
@@ -8,7 +8,16 @@
     background-color: aliceblue;
   }
 
+  .wrapper_pannelli {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    background-color: aliceblue;
+  }
+
   .gauge {
     background-color: whitesmoke;
-    height: 250px;
+    /* height: 250px; */
   }
