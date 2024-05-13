@@ -1,0 +1,14 @@
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  .gauge {
+    background-color: whitesmoke;
+    height: 250px;
+  }
